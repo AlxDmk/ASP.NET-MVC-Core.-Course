@@ -7,16 +7,26 @@ namespace ASP.NET_MVC_Core._Course.Models.Repository;
 public class CategoryRepository: ICategoryRepository
 {
     private readonly AppDbContext _context;
+    private readonly object _locker = new();
 
     public CategoryRepository(AppDbContext context)
     {
         _context = context;
     }
-    public List<Category> GetAll() => _context.Categories.ToList();
+    public List<Category> GetAll()
+    {
+        lock(_locker)
+        {
+            return _context.Categories.ToList();
+        }
+    } 
 
     public void Add(Category entity)
     {
-        _context.Categories.Add(entity);
-        _context.SaveChanges();
+        lock (_locker)
+        {
+            _context.Categories.Add(entity);
+            _context.SaveChanges();
+        }
     }
 }
