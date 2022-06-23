@@ -1,0 +1,32 @@
+﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model ASP.NET_MVC_Core._Course.Models.Dtos.AllCategoriesDto
+
+@{
+    ViewData["Title"] = "Категории";
+}
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Наименование</th>
+    </tr>
+    </thead>
+    <tbody>
+     @foreach (var cat in Model.CatalogDto)
+     {
+         <tr>
+             <td>@cat.Id</td>
+             <td>@cat.Name</td>
+         </tr>
+     }
+    </tbody>
+</table>
+
+<form method="post">
+    <div class="form-group">
+        <label for="Name">Наименование</label>
+        <input type="text" class="form-control" id="Name" name="name" placeholder="Введите наименование категории">
+    </div>
+    <br>
+    <input type="submit" name="submit" value="Создать">
+</form>

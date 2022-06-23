@@ -1,0 +1,58 @@
+﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model ASP.NET_MVC_Core._Course.Models.Dtos.AllProductsDto
+@{
+    ViewData["Title"] = "Товары";
+    
+}
+
+
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Наименование</th>
+        <th scope="col">Картинка</th>
+        <th scope="col">Категория</th>
+        <th scope="col">Цена</th>
+    </tr>
+    </thead>
+    <tbody>
+     @foreach (var product in Model.AllProductDtos)
+     {
+         <tr>
+             <td>@product.Id</td>
+             <td>@product.Name</td>
+             <td><img src="@product.ImageUrl" width="200"  alt="@product.Name"></td>
+             <td>@product.CategoriID</td>
+             <td>@product.Price</td>
+             
+         </tr>
+     }
+    </tbody>
+</table>
+
+
+<form method="post">
+    <div class="form-group">
+        <label for="Name">Наименование</label>
+        <input type="text" class="form-control" id="Name" name="name" placeholder="Введите наименование товара">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="categoriId">Категория товара</label>
+        <input type="text" class="form-control" id="categoriId" name="categoriId" placeholder="Выберете категорию товара">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="Price">Цена товара</label>
+        <input type="text" class="form-control" id="Price" name="Price" placeholder="Укажите цену товара">
+    </div>
+    <br>
+    [URL]
+    <div class="form-group">
+        <label for="imageUrl">URL картинки товара</label>
+        <input type="text" class="form-control" id="imageUrl" name="imageUrl" placeholder="Ссылка на картинку">
+    </div>
+        <br>
+    <input type="submit" name="submit" value="Создать">
+</form>
