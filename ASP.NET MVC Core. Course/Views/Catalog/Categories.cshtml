@@ -1,5 +1,5 @@
 ﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
-@model ASP.NET_MVC_Core._Course.Models.Dtos.AllCategoriesDto
+@model ASP.NET_MVC_Core._Course.ViewModels.AllCategoriesModel
 
 @{
     ViewData["Title"] = "Категории";
@@ -23,7 +23,7 @@
 </table>
 
 <form method="post">
-    <div class="form-group">
+   <div class="form-group">
         <label for="Name">Наименование</label>
         <input type="text" class="form-control" id="Name" name="name" placeholder="Введите наименование категории">
     </div>
