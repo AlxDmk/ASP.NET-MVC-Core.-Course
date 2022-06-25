@@ -8,7 +8,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf80a91b-1c8f-47ac-a17c-a3b4fb915ef4" name="Changes" comment="" />
+    <list default="true" id="cf80a91b-1c8f-47ac-a17c-a3b4fb915ef4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/ViewModels/CategoryModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/ViewModels/ProductModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/Entities/Product.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/Interfaces/IRepositories/ICategoryRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/Interfaces/IRepositories/IProductRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/Interfaces/IRepositories/IRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ASP.NET MVC Core. Course/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ASP.NET MVC Core. Course/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course.sln" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/ASP.NET MVC Core. Course.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/ASP.NET MVC Core. Course.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Additional Tasks/ConcurrentList.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Controllers/CatalogController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Controllers/CatalogController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Controllers/CategoryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Controllers/CategoryController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Migrations/20220605093651_Init.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Migrations/20220605093651_Init.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Models/Data/AppDbContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Models/Dtos/AllCategoriesDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/ViewModels/AllCategoriesModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Models/Dtos/AllProductsDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/ViewModels/AllProductsModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Models/Dtos/CategoryDto.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Models/Dtos/ProductDto.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Models/Entities/Catalog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Entities/Catalog.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Models/Entities/Category.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Entities/Category.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Models/Entities/Product.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Models/ErrorViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/ViewModels/ErrorViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Models/Mapping/MapperProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/ViewModels/Mapping/MapperProfile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Models/Repository/CategoryRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Models/Repository/IRepositories/ICategoryRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Models/Repository/IRepositories/IProductRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Models/Repository/IRepositories/IRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Models/Repository/ProductRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Views/Catalog/Categories.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Views/Catalog/Categories.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Views/Category/Products.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Views/Category/Products.cshtml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +51,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Lesson2" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
   </component>
@@ -100,6 +134,7 @@
       <workItem from="1654770123649" duration="190000" />
       <workItem from="1654797357310" duration="2918000" />
       <workItem from="1655980678443" duration="260000" />
+      <workItem from="1656123231818" duration="22317000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1654410674717</created>
@@ -149,7 +184,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Lesson1" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
