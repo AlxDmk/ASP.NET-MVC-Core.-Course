@@ -42,6 +42,7 @@
         <Compile Include="Entities\Catalog.cs" />
         <Compile Include="Entities\Category.cs" />
         <Compile Include="Entities\Product.cs" />
+        <Compile Include="Interfaces\IEmailService.cs" />
         <Compile Include="Interfaces\IRepositories\ICategoryRepository.cs" />
         <Compile Include="Interfaces\IRepositories\IProductRepository.cs" />
         <Compile Include="Interfaces\IRepositories\IRepository.cs" />
