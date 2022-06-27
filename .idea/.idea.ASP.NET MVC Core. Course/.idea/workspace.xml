@@ -8,7 +8,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf80a91b-1c8f-47ac-a17c-a3b4fb915ef4" name="Changes" comment="" />
+    <list default="true" id="cf80a91b-1c8f-47ac-a17c-a3b4fb915ef4" name="Changes" comment="Lesson3">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ASP.NET MVC Core. Course/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ASP.NET MVC Core. Course/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/ASP.NET MVC Core. Course.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/ASP.NET MVC Core. Course.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Controllers/CategoryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Controllers/CategoryController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Domain.csproj" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Lesson2" />
+        <entry key="$PROJECT_DIR$" value="Lesson3" />
       </map>
     </option>
   </component>
@@ -100,6 +107,7 @@
       <workItem from="1654770123649" duration="190000" />
       <workItem from="1654797357310" duration="2918000" />
       <workItem from="1655980678443" duration="260000" />
+      <workItem from="1656123231818" duration="44778000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1654410674717</created>
@@ -136,7 +144,28 @@
       <option name="project" value="LOCAL" />
       <updated>1654798236178</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Lesson3">
+      <created>1656148879254</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1656148879254</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Lesson3">
+      <created>1656149028277</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1656149028277</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Lesson3">
+      <created>1656149157396</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1656149157396</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,7 +178,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Lesson3" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -160,6 +201,7 @@
     <MESSAGE value="Init" />
     <MESSAGE value="Lesson1" />
     <MESSAGE value="Lesson 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 2" />
+    <MESSAGE value="Lesson3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson3" />
   </component>
 </project>

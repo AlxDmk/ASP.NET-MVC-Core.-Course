@@ -1,27 +1,27 @@
-using ASP.NET_MVC_Core._Course.Models.Data;
-using ASP.NET_MVC_Core._Course.Models.Entities;
-using ASP.NET_MVC_Core._Course.Models.Mapping;
-using ASP.NET_MVC_Core._Course.Models.Repository;
-using ASP.NET_MVC_Core._Course.Models.Repository.IRepositories;
+using ASP.NET_MVC_Core._Course.Services;
+using ASP.NET_MVC_Core._Course.ViewModels.Mapping;
 using AutoMapper;
-using Microsoft.EntityFrameworkCore;
+using Data.Repository;
+using Domain.Entities;
+using Domain.Interfaces;
+using Domain.Interfaces.IRepositories;
+using MailKit.Net.Smtp;
+
 
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-
-builder.Services.AddDbContext<AppDbContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-
-});
-
 
 var mapperConfiguration = new MapperConfiguration(mp => mp.AddProfile(new MapperProfile()));
 var mapper = mapperConfiguration.CreateMapper();
 
-builder.Services.AddScoped<IRepository<Category>, CategoryRepository>();
-builder.Services.AddScoped<IProductRepository, ProductRepository>();
+var emailConfig = builder.Configuration
+    .GetSection("Email")
+    .Get<EmailConfig>();
+builder.Services.AddSingleton(emailConfig);
+
+
+builder.Services.AddSingleton<IRepository<Category>, CategoryRepositoryList>();
+builder.Services.AddSingleton<IRepository<Product>, ProductRepositoryList>();
+builder.Services.AddSingleton<IEmailService, MailKitEmailService>();
 
 builder.Services.AddSingleton(mapper);
 

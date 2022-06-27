@@ -1,5 +1,5 @@
 ﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
-@model ASP.NET_MVC_Core._Course.Models.Dtos.AllProductsDto
+@model ASP.NET_MVC_Core._Course.ViewModels.AllProductsModel
 @{
     ViewData["Title"] = "Товары";
     
@@ -11,8 +11,7 @@
     <tr>
         <th scope="col">ID</th>
         <th scope="col">Наименование</th>
-        <th scope="col">Картинка</th>
-        <th scope="col">Категория</th>
+        <th scope="col">Картинка</th><
         <th scope="col">Цена</th>
     </tr>
     </thead>
@@ -23,7 +22,6 @@
              <td>@product.Id</td>
              <td>@product.Name</td>
              <td><img src="@product.ImageUrl" width="200"  alt="@product.Name"></td>
-             <td>@product.CategoriID</td>
              <td>@product.Price</td>
              
          </tr>
@@ -39,19 +37,13 @@
     </div>
     <br>
     <div class="form-group">
-        <label for="categoriId">Категория товара</label>
-        <input type="text" class="form-control" id="categoriId" name="categoriId" placeholder="Выберете категорию товара">
-    </div>
-    <br>
-    <div class="form-group">
         <label for="Price">Цена товара</label>
         <input type="text" class="form-control" id="Price" name="Price" placeholder="Укажите цену товара">
     </div>
     <br>
-    [URL]
     <div class="form-group">
-        <label for="imageUrl">URL картинки товара</label>
-        <input type="text" class="form-control" id="imageUrl" name="imageUrl" placeholder="Ссылка на картинку">
+        <label for="ImageUrl">URL картинки товара</label>
+        <input type="text" class="form-control" id="ImageUrl" name="ImageUrl" placeholder="Ссылка на картинку">
     </div>
         <br>
     <input type="submit" name="submit" value="Создать">

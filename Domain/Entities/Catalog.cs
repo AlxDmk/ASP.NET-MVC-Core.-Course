@@ -1,4 +1,6 @@
-﻿namespace ASP.NET_MVC_Core._Course.Models.Entities;
+﻿using System.Collections.Generic;
+
+namespace Domain.Entities;
 
 public class Catalog
 {

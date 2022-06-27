@@ -1,43 +1,66 @@
-﻿using ASP.NET_MVC_Core._Course.Models.Dtos;
-using ASP.NET_MVC_Core._Course.Models.Entities;
-using ASP.NET_MVC_Core._Course.Models.Repository.IRepositories;
+﻿using ASP.NET_MVC_Core._Course.ViewModels;
 using AutoMapper;
+using Domain.Entities;
+using Domain.Interfaces;
+using Domain.Interfaces.IRepositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ASP.NET_MVC_Core._Course.Controllers;
 public class CategoryController: Controller
 {
-    private readonly IProductRepository _repository;
+    private readonly IRepository<Product> _repository;
     private readonly IMapper _mapper;
+    private readonly IEmailService _emailService;
 
-    public CategoryController(IProductRepository repository, IMapper mapper)
+    public CategoryController(IRepository<Product> repository, IMapper mapper, IEmailService emailService)
     {
+        ArgumentNullException.ThrowIfNull(repository);
         _repository = repository;
         _mapper = mapper;
+        _emailService = emailService;
     }
 
     [HttpGet]
     public IActionResult Products()
     {
-       var result = _repository.GetAll();
+       IReadOnlyCollection<Product> result = _repository.GetAll();
 
-        var response = new AllProductsDto()
+       var response = new AllProductsModel()
         {
-            AllProductDtos = new List<ProductDto>()
+            AllProductDtos = new List<ProductModel>()
         };
 
         foreach (var product in result)
         {
-            response.AllProductDtos.Add(_mapper.Map<ProductDto>(product));
+            Console.WriteLine(product.ImageUrl);
+            response.AllProductDtos.Add(_mapper.Map<ProductModel>(product));
         }
         return View(response);
     }
  
     [HttpPost]
-    public IActionResult Products([FromForm] ProductDto model)
+    public IActionResult Products([FromForm] string name, string price, string url)
     {
-        _repository.Add(_mapper.Map<Product>(model));
+        ProductModel response = new ProductModel()
+        {
+            Id = Guid.NewGuid(),
+            Name = name,
+            Price = price,
+            ImageUrl = url,
+        };
+        var result = _mapper.Map<Product>(response);
+        _repository.Add(result);
+        _emailService.Send(new Message(){
+            Subject = "Добавление товара в католог",
+            Content = $"Товар {result.Id} добавлен в каталог!"});
         return RedirectToAction("Products");
+    }
+    
+    [HttpGet("Category/Products/Del/{id}")]
+    public IActionResult Delete([FromRoute]Guid id)
+    {
+        _repository.Remove(id);
+        return RedirectToAction(nameof(Products));
     }
     
 }
