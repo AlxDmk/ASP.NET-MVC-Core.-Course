@@ -1,0 +1,829 @@
+2022-06-27 16:53:03.711 +03:00 [INF] User profile is available. Using 'C:\Users\AlxDmk\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-06-27 16:53:03.875 +03:00 [INF] Now listening on: https://localhost:7020
+2022-06-27 16:53:03.879 +03:00 [INF] Now listening on: http://localhost:5020
+2022-06-27 16:53:03.887 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-27 16:53:03.888 +03:00 [INF] Hosting environment: Development
+2022-06-27 16:53:03.890 +03:00 [INF] Content root path: C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\
+2022-06-27 16:53:04.717 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7020/ - -
+2022-06-27 16:53:04.759 +03:00 [INF] Executing endpoint 'ASP.NET_MVC_Core._Course.Controllers.HomeController.Index (ASP.NET MVC Core. Course)'
+2022-06-27 16:53:04.788 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ASP.NET_MVC_Core._Course.Controllers.HomeController (ASP.NET MVC Core. Course).
+2022-06-27 16:53:04.807 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-27 16:53:04.975 +03:00 [INF] Executed ViewResult - view Index executed in 166.9709ms.
+2022-06-27 16:53:04.993 +03:00 [INF] Executed action ASP.NET_MVC_Core._Course.Controllers.HomeController.Index (ASP.NET MVC Core. Course) in 191.2424ms
+2022-06-27 16:53:04.999 +03:00 [INF] Executed endpoint 'ASP.NET_MVC_Core._Course.Controllers.HomeController.Index (ASP.NET MVC Core. Course)'
+2022-06-27 16:53:05.006 +03:00 [INF] HTTP GET / responded 200 in 276.7958 ms
+2022-06-27 16:53:05.022 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7020/ - - - 200 - text/html;+charset=utf-8 312.2729ms
+2022-06-27 16:53:46.754 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7020/Category/Products - -
+2022-06-27 16:53:46.761 +03:00 [INF] Executing endpoint 'ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course)'
+2022-06-27 16:53:46.767 +03:00 [INF] Route matched with {action = "Products", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Products() on controller ASP.NET_MVC_Core._Course.Controllers.CategoryController (ASP.NET MVC Core. Course).
+2022-06-27 16:53:46.816 +03:00 [INF] Executing ViewResult, running view Products.
+2022-06-27 16:53:46.838 +03:00 [INF] Executed ViewResult - view Products executed in 23.8966ms.
+2022-06-27 16:53:46.845 +03:00 [INF] Executed action ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course) in 72.905ms
+2022-06-27 16:53:46.853 +03:00 [INF] Executed endpoint 'ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course)'
+2022-06-27 16:53:46.856 +03:00 [INF] HTTP GET /Category/Products responded 200 in 97.9528 ms
+2022-06-27 16:53:46.863 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7020/Category/Products - - - 200 - text/html;+charset=utf-8 109.1770ms
+2022-06-27 16:53:55.622 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7020/Category/Products application/x-www-form-urlencoded 387
+2022-06-27 16:53:55.628 +03:00 [INF] Executing endpoint 'ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course)'
+2022-06-27 16:53:55.654 +03:00 [INF] Route matched with {action = "Products", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Products(System.String, System.String, System.String) on controller ASP.NET_MVC_Core._Course.Controllers.CategoryController (ASP.NET MVC Core. Course).
+2022-06-27 16:53:56.328 +03:00 [INF] Сообщение отправлено
+2022-06-27 16:53:56.332 +03:00 [INF] Executing RedirectResult, redirecting to /Category/Products.
+2022-06-27 16:53:56.336 +03:00 [INF] Executed action ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course) in 676.7728ms
+2022-06-27 16:53:56.341 +03:00 [INF] Executed endpoint 'ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course)'
+2022-06-27 16:53:56.343 +03:00 [INF] HTTP POST /Category/Products responded 302 in 717.0095 ms
+2022-06-27 16:53:56.348 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7020/Category/Products application/x-www-form-urlencoded 387 - 302 0 - 726.5760ms
+2022-06-27 16:53:56.357 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7020/Category/Products - -
+2022-06-27 16:53:56.360 +03:00 [INF] Executing endpoint 'ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course)'
+2022-06-27 16:53:56.363 +03:00 [INF] Route matched with {action = "Products", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Products() on controller ASP.NET_MVC_Core._Course.Controllers.CategoryController (ASP.NET MVC Core. Course).
+2022-06-27 16:53:56.375 +03:00 [INF] Executing ViewResult, running view Products.
+2022-06-27 16:53:56.381 +03:00 [INF] Executed ViewResult - view Products executed in 6.3488ms.
+2022-06-27 16:53:56.385 +03:00 [INF] Executed action ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course) in 15.7575ms
+2022-06-27 16:53:56.398 +03:00 [INF] Executed endpoint 'ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course)'
+2022-06-27 16:53:56.407 +03:00 [INF] HTTP GET /Category/Products responded 200 in 47.0292 ms
+2022-06-27 16:53:56.414 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7020/Category/Products - - - 200 - text/html;+charset=utf-8 56.8928ms
+2022-06-27 16:54:18.379 +03:00 [INF] Application is shutting down...
+2022-06-27 19:29:10.152 +03:00 [INF] User profile is available. Using 'C:\Users\AlxDmk\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-06-27 19:29:10.329 +03:00 [INF] Now listening on: https://localhost:7020
+2022-06-27 19:29:10.332 +03:00 [INF] Now listening on: http://localhost:5020
+2022-06-27 19:29:10.339 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-27 19:29:10.340 +03:00 [INF] Hosting environment: Development
+2022-06-27 19:29:10.341 +03:00 [INF] Content root path: C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\
+2022-06-27 19:29:10.934 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7020/ - -
+2022-06-27 19:29:10.999 +03:00 [INF] Executing endpoint 'ASP.NET_MVC_Core._Course.Controllers.HomeController.Index (ASP.NET MVC Core. Course)'
+2022-06-27 19:29:11.037 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ASP.NET_MVC_Core._Course.Controllers.HomeController (ASP.NET MVC Core. Course).
+2022-06-27 19:29:11.055 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-27 19:29:11.254 +03:00 [INF] Executed ViewResult - view Index executed in 193.7449ms.
+2022-06-27 19:29:11.265 +03:00 [INF] Executed action ASP.NET_MVC_Core._Course.Controllers.HomeController.Index (ASP.NET MVC Core. Course) in 222.2077ms
+2022-06-27 19:29:11.267 +03:00 [INF] Executed endpoint 'ASP.NET_MVC_Core._Course.Controllers.HomeController.Index (ASP.NET MVC Core. Course)'
+2022-06-27 19:29:11.274 +03:00 [INF] HTTP GET / responded 200 in 329.3792 ms
+2022-06-27 19:29:11.286 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7020/ - - - 200 - text/html;+charset=utf-8 361.7630ms
+2022-06-27 19:29:20.124 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7020/Category/Products - -
+2022-06-27 19:29:20.129 +03:00 [INF] Executing endpoint 'ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course)'
+2022-06-27 19:29:20.134 +03:00 [INF] Route matched with {action = "Products", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Products() on controller ASP.NET_MVC_Core._Course.Controllers.CategoryController (ASP.NET MVC Core. Course).
+2022-06-27 19:29:20.192 +03:00 [INF] Executing ViewResult, running view Products.
+2022-06-27 19:29:20.219 +03:00 [INF] Executed ViewResult - view Products executed in 28.5901ms.
+2022-06-27 19:29:20.222 +03:00 [INF] Executed action ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course) in 85.9037ms
+2022-06-27 19:29:20.226 +03:00 [INF] Executed endpoint 'ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course)'
+2022-06-27 19:29:20.229 +03:00 [INF] HTTP GET /Category/Products responded 200 in 103.2030 ms
+2022-06-27 19:29:20.236 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7020/Category/Products - - - 200 - text/html;+charset=utf-8 112.3643ms
+2022-06-27 19:29:27.458 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7020/Category/Products application/x-www-form-urlencoded 348
+2022-06-27 19:29:27.464 +03:00 [INF] Executing endpoint 'ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course)'
+2022-06-27 19:29:27.487 +03:00 [INF] Route matched with {action = "Products", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Products(System.String, System.String, System.String) on controller ASP.NET_MVC_Core._Course.Controllers.CategoryController (ASP.NET MVC Core. Course).
+2022-06-27 19:29:28.996 +03:00 [INF] Сообщение отправлено
+2022-06-27 19:29:28.998 +03:00 [INF] Executing RedirectResult, redirecting to /Category/Products.
+2022-06-27 19:29:28.999 +03:00 [INF] Executed action ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course) in 1504.4575ms
+2022-06-27 19:29:29.001 +03:00 [INF] Executed endpoint 'ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course)'
+2022-06-27 19:29:29.002 +03:00 [INF] HTTP POST /Category/Products responded 302 in 1540.2660 ms
+2022-06-27 19:29:29.006 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7020/Category/Products application/x-www-form-urlencoded 348 - 302 0 - 1547.4560ms
+2022-06-27 19:29:29.014 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7020/Category/Products - -
+2022-06-27 19:29:29.015 +03:00 [INF] Executing endpoint 'ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course)'
+2022-06-27 19:29:29.016 +03:00 [INF] Route matched with {action = "Products", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Products() on controller ASP.NET_MVC_Core._Course.Controllers.CategoryController (ASP.NET MVC Core. Course).
+2022-06-27 19:29:29.027 +03:00 [INF] Executing ViewResult, running view Products.
+2022-06-27 19:29:29.031 +03:00 [INF] Executed ViewResult - view Products executed in 3.4097ms.
+2022-06-27 19:29:29.037 +03:00 [INF] Executed action ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course) in 14.0925ms
+2022-06-27 19:29:29.039 +03:00 [INF] Executed endpoint 'ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course)'
+2022-06-27 19:29:29.041 +03:00 [INF] HTTP GET /Category/Products responded 200 in 26.2206 ms
+2022-06-27 19:29:29.045 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7020/Category/Products - - - 200 - text/html;+charset=utf-8 30.4065ms
+2022-06-27 19:30:42.595 +03:00 [INF] Application is shutting down...
+2022-06-27 19:30:53.466 +03:00 [INF] User profile is available. Using 'C:\Users\AlxDmk\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-06-27 19:30:53.628 +03:00 [INF] Now listening on: https://localhost:7020
+2022-06-27 19:30:53.631 +03:00 [INF] Now listening on: http://localhost:5020
+2022-06-27 19:30:53.636 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-27 19:30:53.637 +03:00 [INF] Hosting environment: Development
+2022-06-27 19:30:53.638 +03:00 [INF] Content root path: C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\
+2022-06-27 19:30:54.263 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7020/ - -
+2022-06-27 19:30:54.328 +03:00 [INF] Executing endpoint 'ASP.NET_MVC_Core._Course.Controllers.HomeController.Index (ASP.NET MVC Core. Course)'
+2022-06-27 19:30:54.372 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ASP.NET_MVC_Core._Course.Controllers.HomeController (ASP.NET MVC Core. Course).
+2022-06-27 19:30:54.393 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-27 19:30:54.624 +03:00 [INF] Executed ViewResult - view Index executed in 233.1997ms.
+2022-06-27 19:30:54.634 +03:00 [INF] Executed action ASP.NET_MVC_Core._Course.Controllers.HomeController.Index (ASP.NET MVC Core. Course) in 255.9342ms
+2022-06-27 19:30:54.636 +03:00 [INF] Executed endpoint 'ASP.NET_MVC_Core._Course.Controllers.HomeController.Index (ASP.NET MVC Core. Course)'
+2022-06-27 19:30:54.642 +03:00 [INF] HTTP GET / responded 200 in 364.6192 ms
+2022-06-27 19:30:54.655 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7020/ - - - 200 - text/html;+charset=utf-8 402.8516ms
+2022-06-27 19:30:59.444 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7020/Category/Products - -
+2022-06-27 19:30:59.449 +03:00 [INF] Executing endpoint 'ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course)'
+2022-06-27 19:30:59.453 +03:00 [INF] Route matched with {action = "Products", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Products() on controller ASP.NET_MVC_Core._Course.Controllers.CategoryController (ASP.NET MVC Core. Course).
+2022-06-27 19:30:59.516 +03:00 [INF] Executing ViewResult, running view Products.
+2022-06-27 19:30:59.541 +03:00 [INF] Executed ViewResult - view Products executed in 26.2381ms.
+2022-06-27 19:30:59.546 +03:00 [INF] Executed action ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course) in 90.3113ms
+2022-06-27 19:30:59.551 +03:00 [INF] Executed endpoint 'ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course)'
+2022-06-27 19:30:59.556 +03:00 [INF] HTTP GET /Category/Products responded 200 in 110.3286 ms
+2022-06-27 19:30:59.565 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7020/Category/Products - - - 200 - text/html;+charset=utf-8 120.2869ms
+2022-06-27 19:31:08.107 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7020/Category/Products application/x-www-form-urlencoded 384
+2022-06-27 19:31:08.111 +03:00 [INF] Executing endpoint 'ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course)'
+2022-06-27 19:31:08.135 +03:00 [INF] Route matched with {action = "Products", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Products(System.String, System.String, System.String) on controller ASP.NET_MVC_Core._Course.Controllers.CategoryController (ASP.NET MVC Core. Course).
+2022-06-27 19:31:50.522 +03:00 [ERR] Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.
+2022-06-27 19:31:50.526 +03:00 [INF] Executing RedirectResult, redirecting to /Category/Products.
+2022-06-27 19:31:50.528 +03:00 [INF] Executed action ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course) in 42383.2736ms
+2022-06-27 19:31:50.530 +03:00 [INF] Executed endpoint 'ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course)'
+2022-06-27 19:31:50.531 +03:00 [INF] HTTP POST /Category/Products responded 302 in 42422.8427 ms
+2022-06-27 19:31:50.534 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7020/Category/Products application/x-www-form-urlencoded 384 - 302 0 - 42427.7251ms
+2022-06-27 19:31:50.537 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7020/Category/Products - -
+2022-06-27 19:31:50.538 +03:00 [INF] Executing endpoint 'ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course)'
+2022-06-27 19:31:50.540 +03:00 [INF] Route matched with {action = "Products", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Products() on controller ASP.NET_MVC_Core._Course.Controllers.CategoryController (ASP.NET MVC Core. Course).
+2022-06-27 19:31:50.547 +03:00 [INF] Executing ViewResult, running view Products.
+2022-06-27 19:31:50.551 +03:00 [INF] Executed ViewResult - view Products executed in 3.8859ms.
+2022-06-27 19:31:50.553 +03:00 [INF] Executed action ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course) in 11.1066ms
+2022-06-27 19:31:50.555 +03:00 [INF] Executed endpoint 'ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course)'
+2022-06-27 19:31:50.557 +03:00 [INF] HTTP GET /Category/Products responded 200 in 18.8864 ms
+2022-06-27 19:31:50.562 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7020/Category/Products - - - 200 - text/html;+charset=utf-8 24.4255ms
+2022-06-27 19:33:13.970 +03:00 [INF] Application is shutting down...
+2022-06-27 19:36:26.853 +03:00 [INF] User profile is available. Using 'C:\Users\AlxDmk\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-06-27 19:36:26.998 +03:00 [INF] Now listening on: https://localhost:7020
+2022-06-27 19:36:27.000 +03:00 [INF] Now listening on: http://localhost:5020
+2022-06-27 19:36:27.006 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-27 19:36:27.007 +03:00 [INF] Hosting environment: Development
+2022-06-27 19:36:27.008 +03:00 [INF] Content root path: C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\
+2022-06-27 19:36:27.696 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7020/ - -
+2022-06-27 19:36:27.758 +03:00 [INF] Executing endpoint 'ASP.NET_MVC_Core._Course.Controllers.HomeController.Index (ASP.NET MVC Core. Course)'
+2022-06-27 19:36:27.799 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ASP.NET_MVC_Core._Course.Controllers.HomeController (ASP.NET MVC Core. Course).
+2022-06-27 19:36:27.819 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-27 19:36:28.024 +03:00 [INF] Executed ViewResult - view Index executed in 202.5972ms.
+2022-06-27 19:36:28.035 +03:00 [INF] Executed action ASP.NET_MVC_Core._Course.Controllers.HomeController.Index (ASP.NET MVC Core. Course) in 231.3843ms
+2022-06-27 19:36:28.038 +03:00 [INF] Executed endpoint 'ASP.NET_MVC_Core._Course.Controllers.HomeController.Index (ASP.NET MVC Core. Course)'
+2022-06-27 19:36:28.045 +03:00 [INF] HTTP GET / responded 200 in 334.9334 ms
+2022-06-27 19:36:28.061 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7020/ - - - 200 - text/html;+charset=utf-8 371.3339ms
+2022-06-27 19:36:32.007 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7020/Category/Products - -
+2022-06-27 19:36:32.012 +03:00 [INF] Executing endpoint 'ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course)'
+2022-06-27 19:36:32.017 +03:00 [INF] Route matched with {action = "Products", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Products() on controller ASP.NET_MVC_Core._Course.Controllers.CategoryController (ASP.NET MVC Core. Course).
+2022-06-27 19:36:32.082 +03:00 [INF] Executing ViewResult, running view Products.
+2022-06-27 19:36:32.106 +03:00 [INF] Executed ViewResult - view Products executed in 25.0697ms.
+2022-06-27 19:36:32.110 +03:00 [INF] Executed action ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course) in 89.3988ms
+2022-06-27 19:36:32.112 +03:00 [INF] Executed endpoint 'ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course)'
+2022-06-27 19:36:32.114 +03:00 [INF] HTTP GET /Category/Products responded 200 in 105.6493 ms
+2022-06-27 19:36:32.125 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7020/Category/Products - - - 200 - text/html;+charset=utf-8 117.3686ms
+2022-06-27 19:36:38.056 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7020/Category/Products application/x-www-form-urlencoded 351
+2022-06-27 19:36:38.059 +03:00 [INF] Executing endpoint 'ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course)'
+2022-06-27 19:36:38.083 +03:00 [INF] Route matched with {action = "Products", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Products(System.String, System.String, System.String) on controller ASP.NET_MVC_Core._Course.Controllers.CategoryController (ASP.NET MVC Core. Course).
+2022-06-27 19:36:38.509 +03:00 [ERR] Этот хост неизвестен.
+2022-06-27 19:36:38.512 +03:00 [INF] Executing RedirectResult, redirecting to /Category/Products.
+2022-06-27 19:36:38.514 +03:00 [INF] Executed action ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course) in 427.6191ms
+2022-06-27 19:36:38.516 +03:00 [INF] Executed endpoint 'ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course)'
+2022-06-27 19:36:38.517 +03:00 [INF] HTTP POST /Category/Products responded 302 in 459.8165 ms
+2022-06-27 19:36:38.520 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7020/Category/Products application/x-www-form-urlencoded 351 - 302 0 - 463.8059ms
+2022-06-27 19:36:38.523 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7020/Category/Products - -
+2022-06-27 19:36:38.524 +03:00 [INF] Executing endpoint 'ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course)'
+2022-06-27 19:36:38.526 +03:00 [INF] Route matched with {action = "Products", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Products() on controller ASP.NET_MVC_Core._Course.Controllers.CategoryController (ASP.NET MVC Core. Course).
+2022-06-27 19:36:38.532 +03:00 [INF] Executing ViewResult, running view Products.
+2022-06-27 19:36:38.540 +03:00 [INF] Executed ViewResult - view Products executed in 7.2879ms.
+2022-06-27 19:36:38.541 +03:00 [INF] Executed action ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course) in 13.1615ms
+2022-06-27 19:36:38.543 +03:00 [INF] Executed endpoint 'ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course)'
+2022-06-27 19:36:38.544 +03:00 [INF] HTTP GET /Category/Products responded 200 in 20.1645 ms
+2022-06-27 19:36:38.551 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7020/Category/Products - - - 200 - text/html;+charset=utf-8 28.2235ms
+2022-06-27 19:37:17.289 +03:00 [INF] Application is shutting down...
+2022-06-27 19:38:18.618 +03:00 [INF] User profile is available. Using 'C:\Users\AlxDmk\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-06-27 19:38:18.759 +03:00 [INF] Now listening on: https://localhost:7020
+2022-06-27 19:38:18.761 +03:00 [INF] Now listening on: http://localhost:5020
+2022-06-27 19:38:18.767 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-27 19:38:18.769 +03:00 [INF] Hosting environment: Development
+2022-06-27 19:38:18.770 +03:00 [INF] Content root path: C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\
+2022-06-27 19:38:19.430 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7020/ - -
+2022-06-27 19:38:19.495 +03:00 [INF] Executing endpoint 'ASP.NET_MVC_Core._Course.Controllers.HomeController.Index (ASP.NET MVC Core. Course)'
+2022-06-27 19:38:19.534 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ASP.NET_MVC_Core._Course.Controllers.HomeController (ASP.NET MVC Core. Course).
+2022-06-27 19:38:19.551 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-27 19:38:19.732 +03:00 [INF] Executed ViewResult - view Index executed in 177.134ms.
+2022-06-27 19:38:19.742 +03:00 [INF] Executed action ASP.NET_MVC_Core._Course.Controllers.HomeController.Index (ASP.NET MVC Core. Course) in 202.6066ms
+2022-06-27 19:38:19.744 +03:00 [INF] Executed endpoint 'ASP.NET_MVC_Core._Course.Controllers.HomeController.Index (ASP.NET MVC Core. Course)'
+2022-06-27 19:38:19.749 +03:00 [INF] HTTP GET / responded 200 in 306.9422 ms
+2022-06-27 19:38:19.761 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7020/ - - - 200 - text/html;+charset=utf-8 340.6102ms
+2022-06-27 19:38:30.357 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7020/Category/Products - -
+2022-06-27 19:38:30.363 +03:00 [INF] Executing endpoint 'ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course)'
+2022-06-27 19:38:30.368 +03:00 [INF] Route matched with {action = "Products", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Products() on controller ASP.NET_MVC_Core._Course.Controllers.CategoryController (ASP.NET MVC Core. Course).
+2022-06-27 19:38:30.432 +03:00 [INF] Executing ViewResult, running view Products.
+2022-06-27 19:38:30.454 +03:00 [INF] Executed ViewResult - view Products executed in 23.5793ms.
+2022-06-27 19:38:30.457 +03:00 [INF] Executed action ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course) in 84.8708ms
+2022-06-27 19:38:30.460 +03:00 [INF] Executed endpoint 'ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course)'
+2022-06-27 19:38:30.462 +03:00 [INF] HTTP GET /Category/Products responded 200 in 102.8750 ms
+2022-06-27 19:38:30.470 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7020/Category/Products - - - 200 - text/html;+charset=utf-8 112.3412ms
+2022-06-27 19:38:35.286 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7020/Category/Products application/x-www-form-urlencoded 348
+2022-06-27 19:38:35.290 +03:00 [INF] Executing endpoint 'ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course)'
+2022-06-27 19:38:35.312 +03:00 [INF] Route matched with {action = "Products", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Products(System.String, System.String, System.String) on controller ASP.NET_MVC_Core._Course.Controllers.CategoryController (ASP.NET MVC Core. Course).
+2022-06-27 19:38:35.664 +03:00 [ERR] skjsksjksjksj
+2022-06-27 19:38:35.666 +03:00 [INF] Executing RedirectResult, redirecting to /Category/Products.
+2022-06-27 19:38:35.667 +03:00 [INF] Executed action ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course) in 353.3688ms
+2022-06-27 19:38:35.669 +03:00 [INF] Executed endpoint 'ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course)'
+2022-06-27 19:38:35.670 +03:00 [INF] HTTP POST /Category/Products responded 302 in 381.7048 ms
+2022-06-27 19:38:35.674 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7020/Category/Products application/x-www-form-urlencoded 348 - 302 0 - 388.6705ms
+2022-06-27 19:38:35.677 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7020/Category/Products - -
+2022-06-27 19:38:35.678 +03:00 [INF] Executing endpoint 'ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course)'
+2022-06-27 19:38:35.679 +03:00 [INF] Route matched with {action = "Products", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Products() on controller ASP.NET_MVC_Core._Course.Controllers.CategoryController (ASP.NET MVC Core. Course).
+2022-06-27 19:38:35.685 +03:00 [INF] Executing ViewResult, running view Products.
+2022-06-27 19:38:35.689 +03:00 [INF] Executed ViewResult - view Products executed in 3.4948ms.
+2022-06-27 19:38:35.691 +03:00 [INF] Executed action ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course) in 9.2291ms
+2022-06-27 19:38:35.693 +03:00 [INF] Executed endpoint 'ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products (ASP.NET MVC Core. Course)'
+2022-06-27 19:38:35.696 +03:00 [INF] HTTP GET /Category/Products responded 200 in 17.7707 ms
+2022-06-27 19:38:35.699 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7020/Category/Products - - - 200 - text/html;+charset=utf-8 22.4287ms
+2022-06-27 19:38:46.993 +03:00 [INF] Application is shutting down...
+2022-06-27 19:42:38.786 +03:00 [WRN] Товар {@result}
+2022-06-27 19:42:39.858 +03:00 [WRN] Сообщение отправлено
+2022-06-27 19:51:35.722 +03:00 [WRN] Соединение закрыто!
+2022-06-27 19:51:35.738 +03:00 [WRN] Сообщение отправлено
+2022-06-27 20:06:42.190 +03:00 [WRN] Соединение закрыто!
+2022-06-27 20:06:42.202 +03:00 [WRN] Сообщение отправлено
+2022-06-27 20:08:18.716 +03:00 [WRN] Товар добавлен: {"Id":"b80aa629-689a-4793-9e76-f9eed8f7209e","Name":"alxdmk@gmail.com","ImageUrl":null,"Price":69,"$type":"Product"}
+2022-06-27 20:08:19.374 +03:00 [WRN] Соединение закрыто!
+2022-06-27 20:08:19.376 +03:00 [WRN] Сообщение отправлено
+2022-06-27 20:20:40.711 +03:00 [WRN] Товар добавлен: {"Id":"b19d170d-40ef-44d7-97ae-e34f0405deac","Name":"dfdf","ImageUrl":null,"Price":69,"$type":"Product"}
+2022-06-27 20:20:41.452 +03:00 [WRN] Сообщение отправлено
+2022-06-27 21:24:59.307 +03:00 [WRN] Товар {"Id":"1fd15473-33e5-4cb5-b0b1-c65911718fae","Name":"alxdmk@gmail.com","ImageUrl":null,"Price":69,"$type":"Product"} добавлен
+2022-06-27 21:25:00.027 +03:00 [WRN] Сообщение отправлено
+2022-06-27 22:02:52.460 +03:00 [WRN] Товар {"Id":"0f631e78-76ae-4239-991e-2648f0bd4ff0","Name":"alxdmk@gmail.com","ImageUrl":null,"Price":69,"$type":"Product"} добавлен
+2022-06-27 22:03:34.717 +03:00 [ERR] Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.
+2022-06-27 22:04:37.470 +03:00 [WRN] Товар {"Id":"b08dbd58-7a67-4dae-9533-2b90cd97b0ca","Name":"alxdmk@gmail.com","ImageUrl":null,"Price":69,"$type":"Product"} добавлен
+2022-06-27 22:05:19.937 +03:00 [ERR]    at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToApm.End(IAsyncResult asyncResult)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Int32 timeout, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.MailService.ConnectNetwork(String host, Int32 port, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.ConnectAsync(String host, Int32 port, SecureSocketOptions options, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   at MailKit.MailService.Connect(String host, Int32 port, Boolean useSsl, CancellationToken cancellationToken)
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.Send(Message message) in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 29
+2022-06-28 11:36:57.717 +03:00 [WRN] Товар {"Id":"6bb6324e-3414-4b98-8d0e-0537e7b7d2b1","Name":"alxdmk@gmail.com","ImageUrl":null,"Price":69,"$type":"Product"} добавлен
+2022-06-28 11:37:40.101 +03:00 [ERR] HTTP POST /Category/Products responded 500 in 42481.3132 ms
+System.Net.Sockets.SocketException (10060): Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToApm.End(IAsyncResult asyncResult)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Int32 timeout, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.MailService.ConnectNetwork(String host, Int32 port, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.ConnectAsync(String host, Int32 port, SecureSocketOptions options, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   at MailKit.MailService.Connect(String host, Int32 port, Boolean useSsl, CancellationToken cancellationToken)
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.Send(Message message) in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 37
+   at ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products(String name, String price, String url) in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Controllers\CategoryController.cs:line 65
+   at lambda_method27(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-06-28 11:37:40.317 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Sockets.SocketException (10060): Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToApm.End(IAsyncResult asyncResult)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Int32 timeout, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.MailService.ConnectNetwork(String host, Int32 port, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.ConnectAsync(String host, Int32 port, SecureSocketOptions options, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   at MailKit.MailService.Connect(String host, Int32 port, Boolean useSsl, CancellationToken cancellationToken)
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.Send(Message message) in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 37
+   at ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products(String name, String price, String url) in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Controllers\CategoryController.cs:line 65
+   at lambda_method27(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-28 11:48:56.993 +03:00 [WRN] Товар {"Id":"4914abfd-f5ab-41f7-90f4-3891c826e56d","Name":"alxdmk@gmail.com","ImageUrl":null,"Price":69,"$type":"Product"} добавлен
+2022-06-28 11:49:39.339 +03:00 [ERR] HTTP POST /Category/Products responded 500 in 42442.8060 ms
+System.Net.Sockets.SocketException (10060): Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToApm.End(IAsyncResult asyncResult)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Int32 timeout, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.MailService.ConnectNetwork(String host, Int32 port, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.ConnectAsync(String host, Int32 port, SecureSocketOptions options, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   at MailKit.MailService.Connect(String host, Int32 port, Boolean useSsl, CancellationToken cancellationToken)
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.Send(Message message) in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 37
+   at ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products(String name, String price, String url) in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Controllers\CategoryController.cs:line 65
+   at lambda_method27(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-06-28 11:49:39.403 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Sockets.SocketException (10060): Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToApm.End(IAsyncResult asyncResult)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Int32 timeout, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.MailService.ConnectNetwork(String host, Int32 port, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.ConnectAsync(String host, Int32 port, SecureSocketOptions options, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   at MailKit.MailService.Connect(String host, Int32 port, Boolean useSsl, CancellationToken cancellationToken)
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.Send(Message message) in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 37
+   at ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products(String name, String price, String url) in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Controllers\CategoryController.cs:line 65
+   at lambda_method27(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-28 11:51:20.872 +03:00 [WRN] Товар {"Id":"f62f499c-2cf9-45e5-b567-c6b8cfe889a9","Name":"Александр","ImageUrl":null,"Price":69,"$type":"Product"} добавлен
+2022-06-28 11:52:03.186 +03:00 [ERR] HTTP POST /Category/Products responded 500 in 42421.5885 ms
+System.Net.Sockets.SocketException (10060): Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToApm.End(IAsyncResult asyncResult)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Int32 timeout, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.MailService.ConnectNetwork(String host, Int32 port, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.ConnectAsync(String host, Int32 port, SecureSocketOptions options, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   at MailKit.MailService.Connect(String host, Int32 port, Boolean useSsl, CancellationToken cancellationToken)
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.Send(Message message) in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 37
+   at ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products(String name, String price, String url) in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Controllers\CategoryController.cs:line 65
+   at lambda_method27(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-06-28 11:52:03.240 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Sockets.SocketException (10060): Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToApm.End(IAsyncResult asyncResult)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Int32 timeout, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.MailService.ConnectNetwork(String host, Int32 port, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.ConnectAsync(String host, Int32 port, SecureSocketOptions options, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   at MailKit.MailService.Connect(String host, Int32 port, Boolean useSsl, CancellationToken cancellationToken)
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.Send(Message message) in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 37
+   at ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products(String name, String price, String url) in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Controllers\CategoryController.cs:line 65
+   at lambda_method27(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-28 11:55:28.709 +03:00 [WRN] Товар {"Id":"066f75be-3b61-4286-b24e-f7b18ecc828f","Name":"Александр","ImageUrl":null,"Price":45,"$type":"Product"} добавлен
+2022-06-28 11:56:10.986 +03:00 [ERR] HTTP POST /Category/Products responded 500 in 42377.2982 ms
+System.Net.Sockets.SocketException (10060): Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToApm.End(IAsyncResult asyncResult)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Int32 timeout, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.MailService.ConnectNetwork(String host, Int32 port, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.ConnectAsync(String host, Int32 port, SecureSocketOptions options, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   at MailKit.MailService.Connect(String host, Int32 port, Boolean useSsl, CancellationToken cancellationToken)
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.Send(Message message) in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 37
+   at ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products(String name, String price, String url) in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Controllers\CategoryController.cs:line 65
+   at lambda_method27(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-06-28 11:56:11.088 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Sockets.SocketException (10060): Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToApm.End(IAsyncResult asyncResult)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Int32 timeout, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.MailService.ConnectNetwork(String host, Int32 port, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.ConnectAsync(String host, Int32 port, SecureSocketOptions options, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   at MailKit.MailService.Connect(String host, Int32 port, Boolean useSsl, CancellationToken cancellationToken)
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.Send(Message message) in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 37
+   at ASP.NET_MVC_Core._Course.Controllers.CategoryController.Products(String name, String price, String url) in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Controllers\CategoryController.cs:line 65
+   at lambda_method27(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-28 12:03:39.810 +03:00 [WRN] Товар {"Id":"8219ec8d-fdbb-481f-947f-4aeea99b0004","Name":"alxdmk@gmail.com","ImageUrl":null,"Price":69,"$type":"Product"} добавлен
+2022-06-28 12:04:22.122 +03:00 [ERR] Сообщение не удалось доставить
+System.Net.Sockets.SocketException (10060): Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToApm.End(IAsyncResult asyncResult)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Int32 timeout, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.MailService.ConnectNetwork(String host, Int32 port, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.ConnectAsync(String host, Int32 port, SecureSocketOptions options, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   at MailKit.MailService.Connect(String host, Int32 port, Boolean useSsl, CancellationToken cancellationToken)
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.<>c__DisplayClass5_0.<Send>g__SendMessage|0() in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 48
+   at Polly.Policy.<>c__DisplayClass108_0.<Execute>b__0(Context _, CancellationToken _)
+   at Polly.Policy.<>c__DisplayClass138_0.<Implementation>b__0(Context ctx, CancellationToken token)
+   at Polly.Retry.RetryEngine.Implementation[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Action`4 onRetry, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider)
+   at Polly.Retry.RetryPolicy.Implementation[TResult](Func`3 action, Context context, CancellationToken cancellationToken)
+   at Polly.Policy.Implementation(Action`2 action, Context context, CancellationToken cancellationToken)
+   at Polly.Policy.Execute(Action`2 action, Context context, CancellationToken cancellationToken)
+   at Polly.Policy.Execute(Action action)
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.Send(Message message) in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 39
+2022-06-28 12:06:02.259 +03:00 [WRN] Товар {"Id":"55e8bf88-712c-4611-81a4-4065d228bc69","Name":"alxdmk@gmail.com","ImageUrl":null,"Price":15000,"$type":"Product"} добавлен
+2022-06-28 12:06:44.569 +03:00 [ERR] Сообщение не удалось доставить
+System.Net.Sockets.SocketException (10060): Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToApm.End(IAsyncResult asyncResult)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Int32 timeout, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.MailService.ConnectNetwork(String host, Int32 port, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.ConnectAsync(String host, Int32 port, SecureSocketOptions options, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   at MailKit.MailService.Connect(String host, Int32 port, Boolean useSsl, CancellationToken cancellationToken)
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.<>c__DisplayClass5_0.<Send>g__SendMessage|0() in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 48
+   at Polly.Policy.<>c__DisplayClass108_0.<Execute>b__0(Context _, CancellationToken _)
+   at Polly.Policy.<>c__DisplayClass138_0.<Implementation>b__0(Context ctx, CancellationToken token)
+   at Polly.Retry.RetryEngine.Implementation[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Action`4 onRetry, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider)
+   at Polly.Retry.RetryPolicy.Implementation[TResult](Func`3 action, Context context, CancellationToken cancellationToken)
+   at Polly.Policy.Implementation(Action`2 action, Context context, CancellationToken cancellationToken)
+   at Polly.Policy.Execute(Action`2 action, Context context, CancellationToken cancellationToken)
+   at Polly.Policy.Execute(Action action)
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.Send(Message message) in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 39
+2022-06-28 12:15:18.340 +03:00 [WRN] Товар {"Id":"4e8d763e-07ff-404f-a9e2-ca7e6827384e","Name":"Александр","ImageUrl":null,"Price":15000,"$type":"Product"} добавлен
+2022-06-28 12:19:31.180 +03:00 [ERR] Сообщение не удалось доставить
+System.Net.Sockets.SocketException (10060): Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToApm.End(IAsyncResult asyncResult)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Int32 timeout, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.MailService.ConnectNetwork(String host, Int32 port, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.ConnectAsync(String host, Int32 port, SecureSocketOptions options, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   at MailKit.MailService.Connect(String host, Int32 port, Boolean useSsl, CancellationToken cancellationToken)
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.<>c__DisplayClass5_0.<Send>g__SendMessage|2() in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 54
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.<>c__DisplayClass5_0.<Send>b__1() in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 42
+   at Polly.Policy.<>c__DisplayClass108_0.<Execute>b__0(Context _, CancellationToken _)
+   at Polly.Policy.<>c__DisplayClass138_0.<Implementation>b__0(Context ctx, CancellationToken token)
+   at Polly.Retry.RetryEngine.Implementation[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Action`4 onRetry, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider)
+   at Polly.Retry.RetryPolicy.Implementation[TResult](Func`3 action, Context context, CancellationToken cancellationToken)
+   at Polly.Policy.Implementation(Action`2 action, Context context, CancellationToken cancellationToken)
+   at Polly.Policy.Execute(Action`2 action, Context context, CancellationToken cancellationToken)
+   at Polly.Policy.Execute(Action action)
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.Send(Message message) in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 39
+2022-06-28 12:29:48.274 +03:00 [WRN] Товар {"Id":"f8aba77f-b800-4226-ab3a-5514e1ac1b8c","Name":"Александр","ImageUrl":null,"Price":69,"$type":"Product"} добавлен
+2022-06-28 12:30:30.580 +03:00 [WRN] Попытка 1
+System.Net.Sockets.SocketException (10060): Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToApm.End(IAsyncResult asyncResult)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Int32 timeout, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.MailService.ConnectNetwork(String host, Int32 port, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.ConnectAsync(String host, Int32 port, SecureSocketOptions options, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   at MailKit.MailService.Connect(String host, Int32 port, Boolean useSsl, CancellationToken cancellationToken)
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.<>c__DisplayClass5_0.<Send>g__SendMessage|0() in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 62
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.<>c__DisplayClass5_0.<Send>b__2() in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 45
+   at Polly.Policy.<>c__DisplayClass120_0.<ExecuteAndCapture>b__0(Context _, CancellationToken _)
+   at Polly.Policy.<>c__DisplayClass138_0.<Implementation>b__0(Context ctx, CancellationToken token)
+   at Polly.Retry.RetryEngine.Implementation[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Action`4 onRetry, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider)
+2022-06-28 12:31:33.418 +03:00 [WRN] Товар {"Id":"fdbafc3b-c2af-45db-832d-706c6427a8a8","Name":"Александр","ImageUrl":null,"Price":69,"$type":"Product"} добавлен
+2022-06-28 12:32:15.710 +03:00 [WRN] Попытка 1
+System.Net.Sockets.SocketException (10060): Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToApm.End(IAsyncResult asyncResult)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Int32 timeout, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.MailService.ConnectNetwork(String host, Int32 port, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.ConnectAsync(String host, Int32 port, SecureSocketOptions options, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   at MailKit.MailService.Connect(String host, Int32 port, Boolean useSsl, CancellationToken cancellationToken)
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.<>c__DisplayClass5_0.<Send>g__SendMessage|0() in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 62
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.<>c__DisplayClass5_0.<Send>b__2() in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 45
+   at Polly.Policy.<>c__DisplayClass120_0.<ExecuteAndCapture>b__0(Context _, CancellationToken _)
+   at Polly.Policy.<>c__DisplayClass138_0.<Implementation>b__0(Context ctx, CancellationToken token)
+   at Polly.Retry.RetryEngine.Implementation[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Action`4 onRetry, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider)
+2022-06-28 12:32:57.820 +03:00 [WRN] Попытка 2
+System.Net.Sockets.SocketException (10060): Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToApm.End(IAsyncResult asyncResult)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Int32 timeout, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.MailService.ConnectNetwork(String host, Int32 port, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.ConnectAsync(String host, Int32 port, SecureSocketOptions options, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   at MailKit.MailService.Connect(String host, Int32 port, Boolean useSsl, CancellationToken cancellationToken)
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.<>c__DisplayClass5_0.<Send>g__SendMessage|0() in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 62
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.<>c__DisplayClass5_0.<Send>b__2() in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 45
+   at Polly.Policy.<>c__DisplayClass120_0.<ExecuteAndCapture>b__0(Context _, CancellationToken _)
+   at Polly.Policy.<>c__DisplayClass138_0.<Implementation>b__0(Context ctx, CancellationToken token)
+   at Polly.Retry.RetryEngine.Implementation[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Action`4 onRetry, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider)
+2022-06-28 12:33:39.936 +03:00 [WRN] Попытка 3
+System.Net.Sockets.SocketException (10060): Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToApm.End(IAsyncResult asyncResult)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Int32 timeout, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.MailService.ConnectNetwork(String host, Int32 port, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.ConnectAsync(String host, Int32 port, SecureSocketOptions options, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   at MailKit.MailService.Connect(String host, Int32 port, Boolean useSsl, CancellationToken cancellationToken)
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.<>c__DisplayClass5_0.<Send>g__SendMessage|0() in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 62
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.<>c__DisplayClass5_0.<Send>b__2() in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 45
+   at Polly.Policy.<>c__DisplayClass120_0.<ExecuteAndCapture>b__0(Context _, CancellationToken _)
+   at Polly.Policy.<>c__DisplayClass138_0.<Implementation>b__0(Context ctx, CancellationToken token)
+   at Polly.Retry.RetryEngine.Implementation[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Action`4 onRetry, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider)
+2022-06-28 12:34:31.164 +03:00 [WRN] Товар {"Id":"859709c8-76a5-4995-acbd-131a16907ee6","Name":"Александр","ImageUrl":null,"Price":69,"$type":"Product"} добавлен
+2022-06-28 12:35:13.469 +03:00 [WRN] Попытка 1
+System.Net.Sockets.SocketException (10060): Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToApm.End(IAsyncResult asyncResult)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Int32 timeout, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.MailService.ConnectNetwork(String host, Int32 port, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.ConnectAsync(String host, Int32 port, SecureSocketOptions options, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   at MailKit.MailService.Connect(String host, Int32 port, Boolean useSsl, CancellationToken cancellationToken)
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.<>c__DisplayClass5_0.<Send>g__SendMessage|2() in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 56
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.<>c__DisplayClass5_0.<Send>b__1() in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 42
+   at Polly.Policy.<>c__DisplayClass108_0.<Execute>b__0(Context _, CancellationToken _)
+   at Polly.Policy.<>c__DisplayClass138_0.<Implementation>b__0(Context ctx, CancellationToken token)
+   at Polly.Retry.RetryEngine.Implementation[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Action`4 onRetry, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider)
+2022-06-28 12:35:55.616 +03:00 [WRN] Попытка 2
+System.Net.Sockets.SocketException (10060): Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToApm.End(IAsyncResult asyncResult)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Int32 timeout, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.MailService.ConnectNetwork(String host, Int32 port, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.ConnectAsync(String host, Int32 port, SecureSocketOptions options, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   at MailKit.MailService.Connect(String host, Int32 port, Boolean useSsl, CancellationToken cancellationToken)
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.<>c__DisplayClass5_0.<Send>g__SendMessage|2() in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 56
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.<>c__DisplayClass5_0.<Send>b__1() in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 42
+   at Polly.Policy.<>c__DisplayClass108_0.<Execute>b__0(Context _, CancellationToken _)
+   at Polly.Policy.<>c__DisplayClass138_0.<Implementation>b__0(Context ctx, CancellationToken token)
+   at Polly.Retry.RetryEngine.Implementation[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Action`4 onRetry, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider)
+2022-06-28 12:36:37.709 +03:00 [WRN] Попытка 3
+System.Net.Sockets.SocketException (10060): Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToApm.End(IAsyncResult asyncResult)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Int32 timeout, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.MailService.ConnectNetwork(String host, Int32 port, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.ConnectAsync(String host, Int32 port, SecureSocketOptions options, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   at MailKit.MailService.Connect(String host, Int32 port, Boolean useSsl, CancellationToken cancellationToken)
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.<>c__DisplayClass5_0.<Send>g__SendMessage|2() in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 56
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.<>c__DisplayClass5_0.<Send>b__1() in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 42
+   at Polly.Policy.<>c__DisplayClass108_0.<Execute>b__0(Context _, CancellationToken _)
+   at Polly.Policy.<>c__DisplayClass138_0.<Implementation>b__0(Context ctx, CancellationToken token)
+   at Polly.Retry.RetryEngine.Implementation[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Action`4 onRetry, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider)
+2022-06-28 12:37:19.814 +03:00 [ERR] Сообщение не удалось доставить
+System.Net.Sockets.SocketException (10060): Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToApm.End(IAsyncResult asyncResult)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Int32 timeout, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.MailService.ConnectNetwork(String host, Int32 port, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.ConnectAsync(String host, Int32 port, SecureSocketOptions options, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   at MailKit.MailService.Connect(String host, Int32 port, Boolean useSsl, CancellationToken cancellationToken)
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.<>c__DisplayClass5_0.<Send>g__SendMessage|2() in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 56
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.<>c__DisplayClass5_0.<Send>b__1() in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 42
+   at Polly.Policy.<>c__DisplayClass108_0.<Execute>b__0(Context _, CancellationToken _)
+   at Polly.Policy.<>c__DisplayClass138_0.<Implementation>b__0(Context ctx, CancellationToken token)
+   at Polly.Retry.RetryEngine.Implementation[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Action`4 onRetry, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider)
+   at Polly.Retry.RetryPolicy.Implementation[TResult](Func`3 action, Context context, CancellationToken cancellationToken)
+   at Polly.Policy.Implementation(Action`2 action, Context context, CancellationToken cancellationToken)
+   at Polly.Policy.Execute(Action`2 action, Context context, CancellationToken cancellationToken)
+   at Polly.Policy.Execute(Action action)
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.Send(Message message) in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 39
+2022-06-28 12:40:32.212 +03:00 [WRN] Товар {"Id":"e7d43b64-c32c-475f-bbeb-039860deeb9c","Name":"Хозтовары","ImageUrl":null,"Price":69,"$type":"Product"} добавлен
+2022-06-28 12:41:14.548 +03:00 [WRN] Попытка 1
+System.Net.Sockets.SocketException (10060): Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToApm.End(IAsyncResult asyncResult)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Int32 timeout, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.MailService.ConnectNetwork(String host, Int32 port, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.ConnectAsync(String host, Int32 port, SecureSocketOptions options, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   at MailKit.MailService.Connect(String host, Int32 port, Boolean useSsl, CancellationToken cancellationToken)
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.<>c__DisplayClass5_0.<Send>g__SendMessage|1() in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 53
+   at Polly.Policy.<>c__DisplayClass108_0.<Execute>b__0(Context _, CancellationToken _)
+   at Polly.Policy.<>c__DisplayClass138_0.<Implementation>b__0(Context ctx, CancellationToken token)
+   at Polly.Retry.RetryEngine.Implementation[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Action`4 onRetry, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider)
+2022-06-28 12:41:55.048 +03:00 [WRN] Товар {"Id":"c92b1f91-e322-4637-a587-c1e2b5d416dd","Name":"alxdmk@gmail.com","ImageUrl":null,"Price":69,"$type":"Product"} добавлен
+2022-06-28 12:42:37.396 +03:00 [WRN] Попытка 1
+2022-06-28 12:43:19.498 +03:00 [WRN] Попытка 2
+2022-06-28 12:44:36.355 +03:00 [WRN] Товар {"Id":"0d568c8a-68ef-474d-96cd-ec371039e442","Name":"alxdmk@gmail.com","ImageUrl":null,"Price":69,"$type":"Product"} добавлен
+2022-06-28 12:45:18.657 +03:00 [WRN] Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.
+2022-06-28 12:46:39.201 +03:00 [WRN] Товар {"Id":"6b9c6b98-d458-462d-b516-35cad2b2565c","Name":"Александр","ImageUrl":null,"Price":69,"$type":"Product"} добавлен
+2022-06-28 12:48:47.523 +03:00 [WRN] Товар {"Id":"7b6817d0-0cb8-4e52-ae2e-d7749960f7bf","Name":"alxdmk@gmail.com","ImageUrl":null,"Price":15000,"$type":"Product"} добавлен
+2022-06-28 12:49:29.870 +03:00 [WRN] Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.Попытка 1
+2022-06-28 12:55:20.215 +03:00 [WRN] Товар {"Id":"d072420e-cb2c-40f7-87a9-9fa2c57d7408","Name":"alxdmk@gmail.com","ImageUrl":null,"Price":15000,"$type":"Product"} добавлен
+2022-06-28 12:56:02.536 +03:00 [WRN] Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.  Попытка 1
+2022-06-28 12:56:44.630 +03:00 [WRN] Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.  Попытка 2
+2022-06-28 12:57:26.713 +03:00 [ERR] Фатальная ошибка
+System.Net.Sockets.SocketException (10060): Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToApm.End(IAsyncResult asyncResult)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Int32 timeout, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.MailService.ConnectNetwork(String host, Int32 port, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.ConnectAsync(String host, Int32 port, SecureSocketOptions options, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   at MailKit.MailService.Connect(String host, Int32 port, Boolean useSsl, CancellationToken cancellationToken)
+   at ASP.NET_MVC_Core._Course.Services.MailKitEmailService.<>c__DisplayClass5_0.<Send>g__SendMessage|0() in C:\Users\AlxDmk\OneDrive\Рабочий стол\GeekBrains\ASP.NET MVC Core. Course\ASP.NET MVC Core. Course\Services\MailKitEmailService.cs:line 59
+   at Polly.Policy.<>c__DisplayClass120_0.<ExecuteAndCapture>b__0(Context _, CancellationToken _)
+   at Polly.Policy.<>c__DisplayClass138_0.<Implementation>b__0(Context ctx, CancellationToken token)
+   at Polly.Retry.RetryEngine.Implementation[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Action`4 onRetry, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider)
+   at Polly.Retry.RetryPolicy.Implementation[TResult](Func`3 action, Context context, CancellationToken cancellationToken)
+   at Polly.Policy.Implementation(Action`2 action, Context context, CancellationToken cancellationToken)
+   at Polly.Policy.Execute(Action`2 action, Context context, CancellationToken cancellationToken)
+   at Polly.Policy.ExecuteAndCapture(Action`2 action, Context context, CancellationToken cancellationToken)
+2022-06-28 13:10:13.325 +03:00 [WRN] Товар {"Id":"21b806a5-83d3-4c57-8208-ebbcab464453","Name":"Александр","ImageUrl":null,"Price":69,"$type":"Product"} добавлен
+2022-06-28 13:10:55.641 +03:00 [ERR] Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера. 
+ Фатальная ошибка. Сообщение не отправлено! 
+2022-06-28 13:11:36.204 +03:00 [WRN] Товар {"Id":"9e250920-4d9b-40ed-8188-6742f8105fdb","Name":"alxdmk@gmail.com","ImageUrl":null,"Price":15000,"$type":"Product"} добавлен
+2022-06-28 13:12:18.539 +03:00 [ERR] Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера. 
+ Фатальная ошибка. Сообщение не отправлено! 
+2022-06-28 13:27:43.890 +03:00 [WRN] Товар {"Id":"641e41b8-9c0d-412e-a20e-7bfdbfe1409b","Name":"alxdmk@gmail.com","ImageUrl":null,"Price":69,"$type":"Product"} добавлен
+2022-06-28 13:28:26.247 +03:00 [ERR] Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера. 
+ Фатальная ошибка. Сообщение не отправлено! 
+2022-06-28 13:29:05.794 +03:00 [WRN] Товар {"Id":"75d19cb2-f65a-4cc8-a409-3b15f405c6b9","Name":"alxdmk@gmail.com","ImageUrl":null,"Price":69,"$type":"Product"} добавлен
+2022-06-28 13:31:13.164 +03:00 [WRN] Товар {"Id":"8ac4531e-22e0-4da1-9ee9-01e5584dd1c0","Name":"Александр","ImageUrl":null,"Price":15000,"$type":"Product"} добавлен
+2022-06-28 13:31:55.466 +03:00 [WRN] Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.  Попытка 1
+2022-06-28 13:35:47.215 +03:00 [WRN] Товар {"Id":"13f90d4a-d460-47f4-8365-a221a40082ab","Name":"Хозтовары","ImageUrl":null,"Price":69,"$type":"Product"} добавлен
+2022-06-28 13:36:29.513 +03:00 [WRN] Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.  Попытка 1
+2022-06-28 13:37:11.593 +03:00 [WRN] Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.  Попытка 2
+2022-06-28 13:37:53.674 +03:00 [WRN] Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.  Попытка 3
+2022-06-28 13:38:35.787 +03:00 [ERR] Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера. 
+ Фатальная ошибка. Сообщение не отправлено! 
+2022-06-28 13:38:35.789 +03:00 [WRN] Сообщение отправлено 
+2022-06-28 13:39:26.463 +03:00 [WRN] Товар {"Id":"99d65b83-fcad-40e0-b8e2-431d19a7985a","Name":"alxdmk@gmail.com","ImageUrl":null,"Price":15000,"$type":"Product"} добавлен
+2022-06-28 13:40:08.776 +03:00 [WRN] Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.  Попытка 1
+2022-06-28 13:40:50.884 +03:00 [WRN] Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.  Попытка 2
+2022-06-28 13:41:32.984 +03:00 [ERR] Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера. 
+ Фатальная ошибка. Сообщение не отправлено! 
+2022-06-28 13:42:02.060 +03:00 [WRN] Товар {"Id":"823df82f-7613-4aec-a7aa-0cb6aaa02419","Name":"alxdmk@gmail.com","ImageUrl":null,"Price":69,"$type":"Product"} добавлен
+2022-06-28 13:42:02.789 +03:00 [WRN] Сообщение отправлено 

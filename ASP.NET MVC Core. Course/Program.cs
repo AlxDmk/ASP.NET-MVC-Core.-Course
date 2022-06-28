@@ -1,51 +1,89 @@
+using ASP.NET_MVC_Core._Course.Controllers;
+using ASP.NET_MVC_Core._Course.Repository;
 using ASP.NET_MVC_Core._Course.Services;
 using ASP.NET_MVC_Core._Course.ViewModels.Mapping;
 using AutoMapper;
-using Data.Repository;
 using Domain.Entities;
 using Domain.Interfaces;
 using Domain.Interfaces.IRepositories;
 using MailKit.Net.Smtp;
+using Polly;
+using Polly.Registry;
+using Serilog;
+using ILogger = Microsoft.Extensions.Logging.ILogger;
 
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .CreateBootstrapLogger();
+Log.Information("Сервис запущен!");
 
-var builder = WebApplication.CreateBuilder(args);
+try
+{
+    var builder = WebApplication.CreateBuilder(args);
 
-var mapperConfiguration = new MapperConfiguration(mp => mp.AddProfile(new MapperProfile()));
-var mapper = mapperConfiguration.CreateMapper();
+    var mapperConfiguration = new MapperConfiguration(mp => mp.AddProfile(new MapperProfile()));
+    var mapper = mapperConfiguration.CreateMapper();
 
-var emailConfig = builder.Configuration
-    .GetSection("Email")
-    .Get<EmailConfig>();
-builder.Services.AddSingleton(emailConfig);
+    var eConfig = builder.Services
+        .Configure<EmailConfig>(builder.Configuration.GetSection("Email"))
+        .Configure<EmailConfig>(x =>
+        {
+            x.User = builder.Configuration["Email:User"];
+            x.Password = builder.Configuration["Email:Password"];
+        });
+    builder.Services.AddSingleton(eConfig);
 
+    builder.Services.AddSingleton<IRepository<Category>, CategoryRepositoryList>();
+    builder.Services.AddSingleton<IRepository<Product>, ProductRepositoryList>();
 
-builder.Services.AddSingleton<IRepository<Category>, CategoryRepositoryList>();
-builder.Services.AddSingleton<IRepository<Product>, ProductRepositoryList>();
-builder.Services.AddSingleton<IEmailService, MailKitEmailService>();
+    builder.Services.AddScoped<IEmailService, MailKitEmailService>();
+    builder.Services.AddTransient<ISmtpClient, SmtpClient>();
 
-builder.Services.AddSingleton(mapper);
+    builder.Host.UseSerilog((context, conf) =>
+    {
+        conf.ReadFrom.Configuration(context.Configuration);
+    });
 
-builder.Services.AddControllersWithViews();
+    PolicyRegistry policyRegistry = new PolicyRegistry();
+    Policies policies = new Policies();
+    policyRegistry.Add("StandartPolicy", policies.standartPolicy);
+    
+    builder.Services.AddSingleton<IReadOnlyPolicyRegistry<string>>(policyRegistry);
+    
+    builder.Services.AddSingleton(mapper);
 
-var app = builder.Build();
+    builder.Services.AddControllersWithViews();
+
+    var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
+    if (!app.Environment.IsDevelopment())
+    {
+        app.UseExceptionHandler("/Home/Error");
+        // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+        app.UseHsts();
+    }
+
+    app.UseHttpsRedirection();
+    app.UseStaticFiles();
+    app.UseSerilogRequestLogging();
+    app.UseRouting();
+    app.UseAuthorization();
+    app.MapControllerRoute(
+        name: "default",
+        pattern: "{controller=Home}/{action=Index}/{id?}");
+
+    app.Run();
+
 }
+catch(Exception ex)
+{
+    Log.Fatal(ex,"Сервис завалился!");
+}
+finally
+{
+    Log.CloseAndFlush();
+    
+}
+    
 
-app.UseHttpsRedirection();
-app.UseStaticFiles();
-
-app.UseRouting();
-
-app.UseAuthorization();
-
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
-
-app.Run();

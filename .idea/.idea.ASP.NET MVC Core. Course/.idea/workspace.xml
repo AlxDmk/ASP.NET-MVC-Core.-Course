@@ -8,13 +8,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf80a91b-1c8f-47ac-a17c-a3b4fb915ef4" name="Changes" comment="Lesson3">
+    <list default="true" id="cf80a91b-1c8f-47ac-a17c-a3b4fb915ef4" name="Changes" comment="Lesson4">
+      <change afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Repository/CategoryRepositoryList.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ASP.NET MVC Core. Course/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ASP.NET MVC Core. Course/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course.sln" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/ASP.NET MVC Core. Course.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/ASP.NET MVC Core. Course.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Controllers/CategoryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Controllers/CategoryController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Services/EmailConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Services/EmailConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Services/MailKitEmailService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Services/MailKitEmailService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Domain.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Data.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Data.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Repository/CategoryRepositoryList.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Repository/ProductRepositoryList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Repository/ProductRepositoryList.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Lesson3" />
+        <entry key="$PROJECT_DIR$" value="lesson4" />
       </map>
     </option>
   </component>
@@ -107,7 +114,7 @@
       <workItem from="1654770123649" duration="190000" />
       <workItem from="1654797357310" duration="2918000" />
       <workItem from="1655980678443" duration="260000" />
-      <workItem from="1656123231818" duration="44778000" />
+      <workItem from="1656123231818" duration="80499000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1654410674717</created>
@@ -165,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656149157396</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Lesson4">
+      <created>1656309610899</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1656309610899</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,7 +198,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="Lesson3" />
+                        <option value="lesson4" />
                       </list>
                     </value>
                   </entry>
@@ -202,6 +216,7 @@
     <MESSAGE value="Lesson1" />
     <MESSAGE value="Lesson 2" />
     <MESSAGE value="Lesson3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson3" />
+    <MESSAGE value="Lesson4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson4" />
   </component>
 </project>
