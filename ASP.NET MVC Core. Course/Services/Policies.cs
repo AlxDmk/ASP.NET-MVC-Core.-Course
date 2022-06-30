@@ -10,7 +10,7 @@ namespace ASP.NET_MVC_Core._Course.Services;
 
 public  class Policies
 {
-      public AsyncRetryPolicy standartPolicy = Policy
+      public AsyncRetryPolicy standartPolicyAsync = Policy
         .Handle<Exception>()
         .RetryAsync(2, (ex, retryAttempt) => 
             Log.Warning("{A}  Попытка {B}", ex.Message, retryAttempt)

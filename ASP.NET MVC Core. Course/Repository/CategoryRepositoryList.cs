@@ -9,10 +9,11 @@ public class CategoryRepositoryList:ICategoryRepository
 {
     private readonly ConcurrentDictionary<Guid, Category> _categories = new ();
     public IReadOnlyCollection<Category> GetAll() => _categories.Values.ToList();
-    public void Add(Category entity)
+    public void Add(Category entity, CancellationToken token = default)
     {
         try
         {
+            token.ThrowIfCancellationRequested() ;
             _categories.TryAdd(Guid.NewGuid(), entity);
             Log.Warning("Товар {@Entity} попал в базу", entity);
 

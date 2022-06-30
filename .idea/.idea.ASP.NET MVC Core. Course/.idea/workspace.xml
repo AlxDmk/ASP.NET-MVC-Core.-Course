@@ -8,20 +8,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf80a91b-1c8f-47ac-a17c-a3b4fb915ef4" name="Changes" comment="Lesson4">
-      <change afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Repository/CategoryRepositoryList.cs" afterDir="false" />
+    <list default="true" id="cf80a91b-1c8f-47ac-a17c-a3b4fb915ef4" name="Changes" comment="Lesson7">
+      <change afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Services/ServerWatcherBackgroundService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ASP.NET MVC Core. Course/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ASP.NET MVC Core. Course/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course.sln" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/ASP.NET MVC Core. Course.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/ASP.NET MVC Core. Course.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Adds/AllLinesReader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Adds/AllLinesReader.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Controllers/CategoryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Controllers/CategoryController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Services/EmailConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Services/EmailConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Repository/CategoryRepositoryList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Repository/CategoryRepositoryList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Repository/ProductRepositoryList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Repository/ProductRepositoryList.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Services/MailKitEmailService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Services/MailKitEmailService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Data.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Data.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Repository/CategoryRepositoryList.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Repository/ProductRepositoryList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Repository/ProductRepositoryList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Services/Policies.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/Services/Policies.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.NET MVC Core. Course/logs/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.NET MVC Core. Course/logs/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Interfaces/IRepositories/IRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Interfaces/IRepositories/IRepository.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lesson4" />
+        <entry key="$PROJECT_DIR$" value="Lesson6" />
       </map>
     </option>
   </component>
@@ -42,6 +40,10 @@
         <option name="repository" value="ASP.NET-MVC-Core.-Course" />
       </RepoCoordinatesHolder>
     </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/AlxDmk/OneDrive/Рабочий стол/GeekBrains/ASP.NET MVC Core. Course/ASP.NET MVC Core. Course/Adds/AllLinesReader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/AlxDmk/OneDrive/Рабочий стол/GeekBrains/ASP.NET MVC Core. Course/ASP.NET MVC Core. Course/Adds/AllLinesReader.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -114,7 +116,7 @@
       <workItem from="1654770123649" duration="190000" />
       <workItem from="1654797357310" duration="2918000" />
       <workItem from="1655980678443" duration="260000" />
-      <workItem from="1656123231818" duration="80499000" />
+      <workItem from="1656123231818" duration="117130000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1654410674717</created>
@@ -179,7 +181,28 @@
       <option name="project" value="LOCAL" />
       <updated>1656309610899</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Lesson5">
+      <created>1656413025254</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1656413025254</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Lesson 6&#10;задание 2 к ДЗ -&gt; AllLinesReader">
+      <created>1656568718027</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1656568718027</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Lesson7">
+      <created>1656621426961</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1656621426961</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,11 +221,17 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="lesson4" />
+                        <option value="Lesson7" />
                       </list>
                     </value>
                   </entry>
                 </map>
+              </option>
+              <option name="TEXT_FILTER_SETTINGS">
+                <TextFilterSettings>
+                  <option name="REGEX" value="true" />
+                  <option name="MATCH_CASE" value="true" />
+                </TextFilterSettings>
               </option>
             </State>
           </value>
@@ -217,6 +246,9 @@
     <MESSAGE value="Lesson 2" />
     <MESSAGE value="Lesson3" />
     <MESSAGE value="Lesson4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson4" />
+    <MESSAGE value="Lesson5" />
+    <MESSAGE value="Lesson 6&#10;задание 2 к ДЗ -&gt; AllLinesReader" />
+    <MESSAGE value="Lesson7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson7" />
   </component>
 </project>

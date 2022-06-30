@@ -7,7 +7,7 @@ using Polly.Registry;
 
 namespace ASP.NET_MVC_Core._Course.Services;
 
-public class MailKitEmailService:IEmailService, IDisposable
+public class MailKitEmailService:IEmailService, IDisposable, IAsyncDisposable
 {
     private readonly ILogger<MailKitEmailService> _logger;
     private readonly EmailConfig _settings;
@@ -18,14 +18,14 @@ public class MailKitEmailService:IEmailService, IDisposable
     public MailKitEmailService(
         ILogger<MailKitEmailService> logger,
         IOptions<EmailConfig> settings,
-        ISmtpClient client, IReadOnlyPolicyRegistry<string> policyRegistry)
+        ISmtpClient client, 
+        IReadOnlyPolicyRegistry<string> policyRegistry)
     
     {
         _logger = logger;
         _client = client;
         _policyRegistry = policyRegistry;
         _settings = settings.Value;
-      
     }
     public async Task SendAsync(Message message, CancellationToken cancellationToken = default)
     {
@@ -37,7 +37,7 @@ public class MailKitEmailService:IEmailService, IDisposable
         mimeMessage.Subject = message.Subject;
         mimeMessage.Body = new BodyBuilder() {HtmlBody = $"<div>{message.Content}</div>"}.ToMessageBody();
 
-        var res = await _policyRegistry.Get<AsyncPolicy>("StandartPolicy")
+        var res = await _policyRegistry.Get<AsyncPolicy>("StandartPolicyAsync")
             .ExecuteAndCaptureAsync(async () =>
                 await _client.SendAsync(mimeMessage, cancellationToken));
 
@@ -53,6 +53,7 @@ public class MailKitEmailService:IEmailService, IDisposable
 
     private void EnsureConnectedAndAuthenticated(CancellationToken cancellationToken)
     {
+          
            EnsureConnected(cancellationToken);
            EnsureAuthenticated(cancellationToken);
         
@@ -82,6 +83,16 @@ public class MailKitEmailService:IEmailService, IDisposable
         if (_client.IsConnected  )
         {
             _client.DisconnectAsync(true);
+            _logger.LogWarning("Disposed");
+        }
+        _client.Dispose();
+    }
+
+    public async ValueTask DisposeAsync()
+    {
+        if (_client.IsConnected  )
+        {
+            await  _client.DisconnectAsync(true);
             _logger.LogWarning("Disposed");
         }
         _client.Dispose();

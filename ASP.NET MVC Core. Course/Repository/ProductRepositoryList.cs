@@ -16,12 +16,14 @@ public class ProductRepositoryList: IRepository<Product>
     }
     
     public IReadOnlyCollection<Product> GetAll() => _products.Values.ToList();
-    public void Add(Product entity)
+    public void Add(Product entity, CancellationToken token = default)
     {
         try
         {
+            token.ThrowIfCancellationRequested();
             _products.TryAdd(Guid.NewGuid(), entity);
             _logger.LogWarning("Товар {@Entity} добавлен", entity);
+
         }
         catch(Exception e)
         {

@@ -46,7 +46,7 @@ public class CategoryController: Controller
     }
  
     [HttpPost]
-    public async Task<IActionResult> Products([FromForm] string name, string price, string url)
+    public async Task<IActionResult> Products([FromForm] string name, string price, string url, CancellationToken cancellationToken)
     {
         ProductModel response = new ProductModel()
         {
@@ -56,12 +56,14 @@ public class CategoryController: Controller
             ImageUrl = url,
         };
         var result = _mapper.Map<Product>(response);
-        _repository.Add(result);
+        _repository.Add(result, cancellationToken);
+        
         await _emailService.SendAsync(new Message() {
                 Subject = "Добавление товара в католог",
                 Content = $"Товар {result.Id} добавлен в каталог!"
-            }
-        );
+            }, cancellationToken);
+        
+        cancellationToken.ThrowIfCancellationRequested();
 
         return RedirectToAction("Products");
     }

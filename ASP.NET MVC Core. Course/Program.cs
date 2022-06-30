@@ -37,7 +37,9 @@ try
     builder.Services.AddSingleton<IRepository<Product>, ProductRepositoryList>();
     builder.Services.AddScoped<ISmtpClient, SmtpClient>();
     builder.Services.AddScoped<IEmailService, MailKitEmailService>();
-    
+
+    builder.Services.AddHostedService<ServerWatcherBackgroundService>();
+    builder.Services.AddSingleton<ServerWatcherBackgroundService>();
 
     builder.Host.UseSerilog((context, conf) =>
     {
@@ -46,7 +48,7 @@ try
 
     PolicyRegistry policyRegistry = new PolicyRegistry();
     Policies policies = new Policies();
-    policyRegistry.Add("StandartPolicy", policies.standartPolicy);
+    policyRegistry.Add("StandartPolicyAsync", policies.standartPolicyAsync);
     
     builder.Services.AddSingleton<IReadOnlyPolicyRegistry<string>>(policyRegistry);
     
