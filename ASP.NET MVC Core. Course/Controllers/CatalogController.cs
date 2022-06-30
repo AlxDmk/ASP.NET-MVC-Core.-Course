@@ -1,8 +1,7 @@
-﻿
-using ASP.NET_MVC_Core._Course.Models.Dtos;
-using ASP.NET_MVC_Core._Course.Models.Entities;
-using ASP.NET_MVC_Core._Course.Models.Repository.IRepositories;
+﻿using ASP.NET_MVC_Core._Course.ViewModels;
 using AutoMapper;
+using Domain.Entities;
+using Domain.Interfaces.IRepositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ASP.NET_MVC_Core._Course.Controllers;
@@ -22,26 +21,35 @@ public class CatalogController : Controller
     [HttpGet]
     public IActionResult Categories()
     {
-       List<Category> categories = _repository.GetAll();
+       IReadOnlyCollection<Category> categories = _repository.GetAll();
 
-       var response = new AllCategoriesDto()
+       var response = new AllCategoriesModel()
        {
-           CatalogDto = new List<CategoryDto>()
+           CatalogDto = new List<CategoryModel>()
        };
 
        foreach (var cat in categories)
        {
-           response.CatalogDto.Add(_mapper.Map<CategoryDto>(cat));
+           response.CatalogDto.Add(_mapper.Map<CategoryModel>(cat));
        }
        return View(response);
     }
 
     [HttpPost]
-    public IActionResult Categories([FromForm] CategoryDto model)
+    public IActionResult Categories([FromForm] string name)
     {
+        CategoryModel model = new() {Id = Guid.NewGuid(), Name = name};
+        
         var result = _mapper.Map<Category>(model);
         _repository.Add(result);
 
+        return RedirectToAction(nameof(Categories));
+    }
+
+    [HttpGet("Catalog/Categories/Del/{id}")]
+    public IActionResult Delete([FromRoute]Guid id)
+    {
+        _repository.Remove(id);
         return RedirectToAction(nameof(Categories));
     }
 
