@@ -35,9 +35,9 @@ try
 
     builder.Services.AddSingleton<IRepository<Category>, CategoryRepositoryList>();
     builder.Services.AddSingleton<IRepository<Product>, ProductRepositoryList>();
-
+    builder.Services.AddScoped<ISmtpClient, SmtpClient>();
     builder.Services.AddScoped<IEmailService, MailKitEmailService>();
-    builder.Services.AddTransient<ISmtpClient, SmtpClient>();
+    
 
     builder.Host.UseSerilog((context, conf) =>
     {

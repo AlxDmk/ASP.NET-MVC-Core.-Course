@@ -4,8 +4,6 @@ using Domain.Entities;
 using Domain.Interfaces;
 using Domain.Interfaces.IRepositories;
 using Microsoft.AspNetCore.Mvc;
-using Polly;
-using Polly.Retry;
 
 namespace ASP.NET_MVC_Core._Course.Controllers;
 public class CategoryController: Controller
@@ -14,9 +12,6 @@ public class CategoryController: Controller
     private readonly IMapper _mapper;
     private readonly IEmailService _emailService;
     private readonly ILogger<CategoryController> _logger;
-
-    
-    
 
     public CategoryController(
         IRepository<Product> repository, 
@@ -51,7 +46,7 @@ public class CategoryController: Controller
     }
  
     [HttpPost]
-    public IActionResult Products([FromForm] string name, string price, string url)
+    public async Task<IActionResult> Products([FromForm] string name, string price, string url)
     {
         ProductModel response = new ProductModel()
         {
@@ -62,11 +57,9 @@ public class CategoryController: Controller
         };
         var result = _mapper.Map<Product>(response);
         _repository.Add(result);
-        _emailService.Send(new Message()
-            {
+        await _emailService.SendAsync(new Message() {
                 Subject = "Добавление товара в католог",
                 Content = $"Товар {result.Id} добавлен в каталог!"
-
             }
         );
 
@@ -79,5 +72,4 @@ public class CategoryController: Controller
         _repository.Remove(id);
         return RedirectToAction(nameof(Products));
     }
-    
 }

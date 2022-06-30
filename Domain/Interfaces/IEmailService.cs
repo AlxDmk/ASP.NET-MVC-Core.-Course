@@ -1,8 +1,11 @@
-﻿namespace Domain.Interfaces;
+﻿using System.Threading;
+using System.Threading.Tasks;
+
+namespace Domain.Interfaces;
 
 public interface IEmailService
 {
-    void Send(Message message);
+   Task SendAsync(Message message, CancellationToken cancellationToken = default );
 }
 
 public class Message
