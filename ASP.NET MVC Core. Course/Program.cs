@@ -1,51 +1,91 @@
-using ASP.NET_MVC_Core._Course.Models.Data;
-using ASP.NET_MVC_Core._Course.Models.Entities;
-using ASP.NET_MVC_Core._Course.Models.Mapping;
-using ASP.NET_MVC_Core._Course.Models.Repository;
-using ASP.NET_MVC_Core._Course.Models.Repository.IRepositories;
+using ASP.NET_MVC_Core._Course.Controllers;
+using ASP.NET_MVC_Core._Course.Repository;
+using ASP.NET_MVC_Core._Course.Services;
+using ASP.NET_MVC_Core._Course.ViewModels.Mapping;
 using AutoMapper;
-using Microsoft.EntityFrameworkCore;
+using Domain.Entities;
+using Domain.Interfaces;
+using Domain.Interfaces.IRepositories;
+using MailKit.Net.Smtp;
+using Polly;
+using Polly.Registry;
+using Serilog;
+using ILogger = Microsoft.Extensions.Logging.ILogger;
 
-var builder = WebApplication.CreateBuilder(args);
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .CreateBootstrapLogger();
+Log.Information("Сервис запущен!");
 
-// Add services to the container.
-
-builder.Services.AddDbContext<AppDbContext>(options =>
+try
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+    var builder = WebApplication.CreateBuilder(args);
 
-});
+    var mapperConfiguration = new MapperConfiguration(mp => mp.AddProfile(new MapperProfile()));
+    var mapper = mapperConfiguration.CreateMapper();
 
+    var eConfig = builder.Services
+        .Configure<EmailConfig>(builder.Configuration.GetSection("Email"))
+        .Configure<EmailConfig>(x =>
+        {
+            x.User = builder.Configuration["Email:User"];
+            x.Password = builder.Configuration["Email:Password"];
+        });
+    builder.Services.AddSingleton(eConfig);
 
-var mapperConfiguration = new MapperConfiguration(mp => mp.AddProfile(new MapperProfile()));
-var mapper = mapperConfiguration.CreateMapper();
+    builder.Services.AddSingleton<IRepository<Category>, CategoryRepositoryList>();
+    builder.Services.AddSingleton<IRepository<Product>, ProductRepositoryList>();
+    builder.Services.AddScoped<ISmtpClient, SmtpClient>();
+    builder.Services.AddScoped<IEmailService, MailKitEmailService>();
 
-builder.Services.AddScoped<IRepository<Category>, CategoryRepository>();
-builder.Services.AddScoped<IProductRepository, ProductRepository>();
+    builder.Services.AddHostedService<ServerWatcherBackgroundService>();
+    builder.Services.AddSingleton<ServerWatcherBackgroundService>();
 
-builder.Services.AddSingleton(mapper);
+    builder.Host.UseSerilog((context, conf) =>
+    {
+        conf.ReadFrom.Configuration(context.Configuration);
+    });
 
-builder.Services.AddControllersWithViews();
+    PolicyRegistry policyRegistry = new PolicyRegistry();
+    Policies policies = new Policies();
+    policyRegistry.Add("StandartPolicyAsync", policies.standartPolicyAsync);
+    
+    builder.Services.AddSingleton<IReadOnlyPolicyRegistry<string>>(policyRegistry);
+    
+    builder.Services.AddSingleton(mapper);
 
-var app = builder.Build();
+    builder.Services.AddControllersWithViews();
+
+    var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
+    if (!app.Environment.IsDevelopment())
+    {
+        app.UseExceptionHandler("/Home/Error");
+        // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+        app.UseHsts();
+    }
+
+    app.UseHttpsRedirection();
+    app.UseStaticFiles();
+    app.UseSerilogRequestLogging();
+    app.UseRouting();
+    app.UseAuthorization();
+    app.MapControllerRoute(
+        name: "default",
+        pattern: "{controller=Home}/{action=Index}/{id?}");
+
+    app.Run();
+
 }
+catch(Exception ex)
+{
+    Log.Fatal(ex,"Сервис завалился!");
+}
+finally
+{
+    Log.CloseAndFlush();
+    
+}
+    
 
-app.UseHttpsRedirection();
-app.UseStaticFiles();
-
-app.UseRouting();
-
-app.UseAuthorization();
-
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
-
-app.Run();
