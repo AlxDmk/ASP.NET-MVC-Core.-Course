@@ -1,4 +1,5 @@
 ﻿using System.Collections.Concurrent;
+using ASP.NET_MVC_Core._Course.DomainEvents;
 using ASP.NET_MVC_Core._Course.ViewModels;
 using Domain.Entities;
 using Domain.Interfaces.IRepositories;
@@ -22,6 +23,25 @@ public class ProductRepositoryList: IRepository<Product>
         {
             token.ThrowIfCancellationRequested();
             _products.TryAdd(Guid.NewGuid(), entity);
+            DomainEvents.DomainEvents.Raise(new ProductAdded(entity));
+            _logger.LogWarning("Товар {@Entity} добавлен", entity);
+        }
+        catch(Exception e)
+        {
+            _logger.LogError(e, "Ошибка добавления товара {@Entity}", entity);
+        }
+        
+    }
+
+    public async Task AddAsync(Product entity, CancellationToken token = default)
+    {
+        try
+        {
+            token.ThrowIfCancellationRequested();
+            await Task.Run(() => _products.TryAdd(Guid.NewGuid(), entity), token);
+            
+            DomainEvents.DomainEvents.Raise(new ProductAdded(entity));
+            
             _logger.LogWarning("Товар {@Entity} добавлен", entity);
 
         }

@@ -1,7 +1,6 @@
 ﻿using ASP.NET_MVC_Core._Course.ViewModels;
 using AutoMapper;
 using Domain.Entities;
-using Domain.Interfaces;
 using Domain.Interfaces.IRepositories;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,20 +9,15 @@ public class CategoryController: Controller
 {
     private readonly IRepository<Product> _repository;
     private readonly IMapper _mapper;
-    private readonly IEmailService _emailService;
-    private readonly ILogger<CategoryController> _logger;
+    
 
     public CategoryController(
         IRepository<Product> repository, 
-        IMapper mapper, 
-        IEmailService emailService, 
-        ILogger<CategoryController> logger)
+        IMapper mapper)
     {
         ArgumentNullException.ThrowIfNull(repository);
         _repository = repository;
         _mapper = mapper;
-        _emailService = emailService;
-        _logger = logger;
     }
     
     
@@ -57,13 +51,6 @@ public class CategoryController: Controller
         };
         var result = _mapper.Map<Product>(response);
         _repository.Add(result, cancellationToken);
-        
-        await _emailService.SendAsync(new Message() {
-                Subject = "Добавление товара в католог",
-                Content = $"Товар {result.Id} добавлен в каталог!"
-            }, cancellationToken);
-        
-        cancellationToken.ThrowIfCancellationRequested();
 
         return RedirectToAction("Products");
     }

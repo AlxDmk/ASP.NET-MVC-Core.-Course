@@ -27,7 +27,7 @@ public class MailKitEmailService:IEmailService, IDisposable, IAsyncDisposable
         _policyRegistry = policyRegistry;
         _settings = settings.Value;
     }
-    public async Task SendAsync(Message message, CancellationToken cancellationToken = default)
+    public async  Task SendAsync(Message message, CancellationToken cancellationToken = default)
     {
         EnsureConnectedAndAuthenticated(cancellationToken);
         

@@ -1,4 +1,5 @@
 using ASP.NET_MVC_Core._Course.Controllers;
+using ASP.NET_MVC_Core._Course.DomainEvents.EventConsumers;
 using ASP.NET_MVC_Core._Course.Repository;
 using ASP.NET_MVC_Core._Course.Services;
 using ASP.NET_MVC_Core._Course.ViewModels.Mapping;
@@ -39,7 +40,7 @@ try
     builder.Services.AddScoped<IEmailService, MailKitEmailService>();
 
     builder.Services.AddHostedService<ServerWatcherBackgroundService>();
-    builder.Services.AddSingleton<ServerWatcherBackgroundService>();
+    builder.Services.AddHostedService<ProductAddedHandler>();
 
     builder.Host.UseSerilog((context, conf) =>
     {
@@ -49,6 +50,7 @@ try
     PolicyRegistry policyRegistry = new PolicyRegistry();
     Policies policies = new Policies();
     policyRegistry.Add("StandartPolicyAsync", policies.standartPolicyAsync);
+    policyRegistry.Add("ExponantionalPolicyAsync", policies.exponantionalPolicyAsync);
     
     builder.Services.AddSingleton<IReadOnlyPolicyRegistry<string>>(policyRegistry);
     

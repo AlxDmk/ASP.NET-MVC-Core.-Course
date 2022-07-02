@@ -15,12 +15,12 @@ public class CategoryRepositoryList:ICategoryRepository
         {
             token.ThrowIfCancellationRequested() ;
             _categories.TryAdd(Guid.NewGuid(), entity);
-            Log.Warning("Товар {@Entity} попал в базу", entity);
+            Log.Warning("Категория {@Entity} создана", entity);
 
         }
         catch (Exception e)
         {
-            Log.Warning(e, "Товар {@Entity} не попал в базу", entity);
+            Log.Warning(e, "Категория  {@Entity} не создана", entity);
         }
         finally
         {
@@ -28,6 +28,12 @@ public class CategoryRepositoryList:ICategoryRepository
         }
         
     }
+
+    public Task AddAsync(Category entity, CancellationToken token = default)
+    {
+        throw new NotImplementedException();
+    }
+
     public void Remove(Guid id) =>
          _categories.TryRemove(_categories.FirstOrDefault(x => x.Value.Id == id));
 

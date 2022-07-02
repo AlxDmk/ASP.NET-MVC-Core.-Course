@@ -15,4 +15,11 @@ public  class Policies
         .RetryAsync(2, (ex, retryAttempt) => 
             Log.Warning("{A}  Попытка {B}", ex.Message, retryAttempt)
             );
+      public AsyncRetryPolicy exponantionalPolicyAsync = Policy
+          .Handle<Exception>()
+          .WaitAndRetryAsync(2,
+              retryAttempt => TimeSpan.FromSeconds(Math.Pow(retryAttempt, 2)),
+              (ex, retryAttempt) => 
+              Log.Warning("{A}  Попытка {B}", ex.Message, retryAttempt)
+          ); 
 }
